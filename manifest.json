@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Count Down Timer",
+  "version": "0.1",
+  "description": "Takes a date input and displays a count down timer",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["activeTab" ,"storage", "scripting"],
+  "action": {
+    "default_popup": "content/popup.html",
+    "default_icon": {
+      "16": "/images/timer.png",
+      "128": "/images/timer.png",
+      "48": "/images/timer.png",
+      "256": "/images/timer.png"
+  }
+  }
+}
